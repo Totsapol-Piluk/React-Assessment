@@ -16,6 +16,7 @@ const TableAdmin = () => {
 
   useEffect(() => {
     setMembers(initialData);
+   
   }, []);
 
   const save = () => {
@@ -137,7 +138,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Home />
-        
+        {/* <TableUser2 /> */}
       </>
     ),
   },
