@@ -99,13 +99,25 @@ const TableUser2 = () => {
   );
 };
 
+const Ownerpage = () => {
+  return(
+    <>
+      <h1>Totsapol - Grop 8 - 32</h1>
+      <img src="/src/img/profile.jpg"></img>
+      <h6>Shot Biography</h6>
+      <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam voluptas quia autem neque sapiente dignissimos excepturi dolorum, tempore quibusdam corporis provident eaque odit incidunt unde. Magnam quaerat iusto in. Expedita!</span>
+    </>
+  )
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <>
         <Navbar />
-        <App />
+        <Home />
+        
       </>
     ),
   },
@@ -114,7 +126,8 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <Home />
+        <Ownerpage />
+        <App />
       </>
     ),
   },
